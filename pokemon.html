@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="global.js"></script>
+    <script src="./src/components/headerPokemon.js"></script>
+    <script src="./src/components/statBar.js"></script>
+    <script src="./src/components/pokeCard.js"></script>
+    <script src="./src/components/previewPokemon.js"></script>
+    <script src="./src/components/navPokemon.js"></script>
+
+
+</head>
+
+<body>
+    <header-component page="pokemon" id="header"></header-component>
+    <div class="retour">
+        <a href="index.html" id="retour">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 24H10M10 24L24 38M10 24L24 10" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <p>Retour à la liste</p>
+        </a>
+    </div>
+    <section class="affichage">
+        <div id="imageContainer">
+            <div id="imagePrincipale"></div>
+            <div id="autreImage">
+                <div id="face">
+                    <p>Face</p>
+                </div>
+                <div id="dos">
+                    <p>Dos</p>
+                </div>
+            </div>
+        </div>
+        <div id="info">
+            <div>
+                <h2>Types</h2>
+                <div id="types">
+                </div>
+            </div>
+            <div id="physiques">
+                <h2>Informations physiques</h2>
+                <div>
+                    <p>Poids : <span id="poids"></span></p>
+                    <p>Taille : <span id="taille"></span></p>
+                </div>
+            </div>
+            <div id="stats">
+                <h2>Statistiques</h2>
+                <div id="statContainer">
+
+                </div>
+            </div>
+            <div>
+                <h2>Capacités</h2>
+                <div id="capa"></div>
+            </div>
+            <div id="evo">
+                <h2>Chaîne d'évolution</h2>
+                <div id="evoContainer">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <div id="prev">
+        </div>
+        <div id="actual">
+        </div>
+        <div id="next"></div>
+    </div>
+    <p class="auteur">@Made by GUIBERT Kevin</p>
+</body>
+<script src="script2.js"></script>
+
+</html>

@@ -1,2 +1,3 @@
 # pokedex
-Ceci est mon projet pokdex
+Ceci est mon projet pokedex.
+

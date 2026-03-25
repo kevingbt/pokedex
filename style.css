@@ -1,0 +1,286 @@
+/* aclonica-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Aclonica";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/aclonica-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* acme-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Acme";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/acme-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* alef-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alef";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/alef-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* alef-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alef";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/assets/fonts/alef-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --font-h1: "Aclonica", sans-serif;
+  --font-h2: "Acme", sans-serif;
+  --font-p: "Alef", sans-serif;
+  --primary-color: #f6050f;
+  --grey: #6c6c6c;
+  --black: #1e1e1e;
+}
+
+body {
+  margin: 0;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 60px;
+  width: auto;
+  margin-inline: 10%;
+  margin-top: 100px;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-block: 50px;
+}
+.paginationContainer button {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--font-p);
+}
+
+.aucunResultat,
+.loader {
+  font-size: 20px;
+  font-family: var(--font-h2);
+  color: var(--black);
+}
+
+.auteur {
+  font-size: 20px;
+  font-family: var(--font-h1);
+  color: var(--grey);
+  margin: 20px;
+}
+
+.retour {
+  display: flex;
+  margin: 30px 50px;
+}
+
+#retour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-h2);
+  font-size: 24px;
+  color: var(--black);
+}
+
+.affichage {
+  width: auto;
+  margin-inline: 10%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#imageContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  max-height: 720px;
+  position: sticky;
+  top: 100px;
+}
+
+#imagePrincipale {
+  max-width: 400px;
+}
+
+#autreImage {
+  display: flex;
+  justify-content: space-around;
+}
+
+#autreImage div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-family: var(--font-p);
+  color: var(--grey);
+}
+
+#dos,
+#face {
+  max-width: 200px;
+  max-height: 200px;
+}
+#autreImage img {
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
+}
+
+#info h2 {
+  font-family: var(--font-h2);
+  font-size: 24px;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+#types {
+  display: flex;
+  gap: 15px;
+}
+
+#types div {
+  color: white;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--font-p);
+  font-weight: 600;
+}
+
+#physiques div {
+  display: flex;
+  gap: 80px;
+}
+
+#physiques p {
+  font-family: var(--font-p);
+  font-size: 16px;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+#physiques span {
+  font-size: 20px;
+  color: var(--black);
+}
+
+#capa {
+  display: flex;
+  gap: 10px;
+}
+
+#capa div {
+  font-family: var(--font-p);
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 600;
+  padding: 5px 15px;
+  border: #aeaeae solid 1px;
+  border-radius: 10px;
+}
+
+#evoContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+#navigation {
+  background-color: var(--primary-color);
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+  margin-bottom: 50px;
+}
+
+#navigation button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .affichage {
+    flex-direction: column;
+  }
+  #imageContainer  {
+    position: inherit;
+    top: 0;
+  }
+
+  #imageContainer, #imagePrincipale , #info{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+  #evoContainer {
+  flex-direction: column;
+  gap: 10px;
+}
+#actual{
+  display: none;
+}
+#navigation{
+  padding-inline: 20px;
+}
+.auteur{
+  font-size: 16px;
+}
+#capa{
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+}

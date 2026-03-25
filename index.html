@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="global.js"></script>
+    <script src="./src/components/headerPokemon.js"></script>
+    <script src="./src/components/pokeCard.js"></script>
+</head>
+
+<body>
+    <header-component page="home"></header-component>
+    <ul id="card" class="cardContainer"></ul>
+    <div class="paginationContainer">
+        <button id="precedent">
+            <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.25 13.25L1.25 7.25L7.25 1.25" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            Page précédente
+        </button>
+        <button id="suivant">
+            Page suivante
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <p class="auteur">@Made by GUIBERT Kevin</p>
+</body>
+<script src="script.js"></script>
+
+</html>

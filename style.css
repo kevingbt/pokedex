@@ -4,7 +4,7 @@
   font-family: "Aclonica";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/assets/fonts/aclonica-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./src/assets/fonts/aclonica-v25-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* acme-regular - latin */
@@ -13,7 +13,7 @@
   font-family: "Acme";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/assets/fonts/acme-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./src/assets/fonts/acme-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* alef-regular - latin */
@@ -22,7 +22,7 @@
   font-family: "Alef";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/assets/fonts/alef-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./src/assets/fonts/alef-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* alef-700 - latin */
 @font-face {
@@ -30,7 +30,7 @@
   font-family: "Alef";
   font-style: normal;
   font-weight: 700;
-  src: url("/src/assets/fonts/alef-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./src/assets/fonts/alef-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --font-h1: "Aclonica", sans-serif;

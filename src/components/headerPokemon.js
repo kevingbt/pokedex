@@ -133,13 +133,13 @@ class Header extends HTMLElement {
     </style>
     <div class="${page === "home" ? "headerHome" : "headerPokemon"}">
         <a href="index.html">
-            <img class="imgHeader" src="pokedex/src/assets/img/pokedex.png" alt="Logo du site">
+            <img class="imgHeader" src="./src/assets/img/pokedex.png" alt="Logo du site">
             ${page === "home" ? "<h1>Pokedex</h1>" : ""}
         </a>
         ${
           page === "home"
             ? `<div>
-            <img src="pokedex/src/assets/img/search32.png" alt="Loupe de recherche">
+            <img src="./src/assets/img/search32.png" alt="Loupe de recherche">
             <input id="search" type="text" placeholder="${placeholderText}" aria-label="Rechercher un Pokémon"></input>
         </div>`
             : `<div class="infoHeader">

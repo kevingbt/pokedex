@@ -23,7 +23,7 @@ function afficherMessageErreur(message) {
   cardContainer.appendChild(errorMsg);
 }
 
-function renderPokemon(data) {
+function renderPokemon(data) { // créer les cartes pokemons pour les afficher
   const card = document.createElement("pokemon-card");
   card.setAttribute("name", data.name);
   card.setAttribute("id", data.id);
@@ -45,7 +45,7 @@ function renderPokemon(data) {
   }
 }
 
-async function Page() {
+async function Page() { //récupère les pokemons de la page
   try {
     cardContainer.innerHTML = "<p class='loader'>Chargement des Pokémon...</p>";
     const response = await fetch(
@@ -79,7 +79,7 @@ async function Page() {
   }
 }
 
-function affichagePokemon(list) {
+function affichagePokemon(list) { //affiche les pokemons de la page
   cardContainer.innerHTML = "";
   if (list.length === 0) {
     const aucunResultat = document.createElement("p");
@@ -91,13 +91,13 @@ function affichagePokemon(list) {
   list.forEach((pokemon) => renderPokemon(pokemon));
 }
 
-// offset gère à partir de quel pokemon je fetch (pour la pagination)
+
 window.addEventListener("DOMContentLoaded", () => {
   Page();
 
   const search = headerComponent.shadowRoot.getElementById("search"); //récupération de la barre de recherche
 
-  search.addEventListener("input", (e) => {
+  search.addEventListener("input", (e) => {  //gère la barre de recherche
     const term = e.target.value.toLowerCase();
 
     // On filtre notre tableau local de 20 pokémons
@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
     affichagePokemon(filtered);
   });
 
-  precedent.addEventListener("click", () => {
+  precedent.addEventListener("click", () => { //page précédente
     if (page > 1) {
       offset -= 20;
       page--;
@@ -120,7 +120,7 @@ window.addEventListener("DOMContentLoaded", () => {
     Page();
   });
 
-  suivant.addEventListener("click", () => {
+  suivant.addEventListener("click", () => { //page suivante
     if (page < maxPage) {
       offset += 20;
       page++;

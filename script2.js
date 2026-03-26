@@ -35,7 +35,7 @@ const typeColor = {
   fairy: "#cf7286",
 };
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => { // gère l'affichage de la page détail du pokemon
   const id = parseInt(new URLSearchParams(window.location.search).get("id"));
   const max = window.pokedex?.maxPokemon || 1025;
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -148,7 +148,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-async function renderPokemonCard(name) {
+async function renderPokemonCard(name) { //gère l'affichage des évolutions
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
     const pData = await response.json();

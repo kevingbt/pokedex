@@ -1,7 +1,7 @@
 # pokedex
 Ceci est mon projet pokedex.
 
-COMMENT LANCER LE PROJET ----- A EXPLIQUER 
+Si vous souhaitez lancer le projet à partir du .zip, il vous faut le dézipper, puis ouvrir le dossier "Pokemon-main" à l'intérieur du 1er sur VSCode, se placer sur le fichier "index.html", puis faire Go Live en bas à droite de VSCode. 
 
 Pour ce projet, j'ai utilisé HTML, CSS et je me suis fixé comme objectif d'utiliser uniquement du Javascript sans framework particulier car je trouvais que mes compétences sur ce langage n'étaient pas suffisantes.
 
